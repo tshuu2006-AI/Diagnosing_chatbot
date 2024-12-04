@@ -1,6 +1,8 @@
 import json
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import DBSCAN
+from transformers import pipeline
+from collections import Counter
 
 # Tải dữ liệu chưa gán nhãn
 def load_unlabeled_data(file_path):
@@ -9,7 +11,7 @@ def load_unlabeled_data(file_path):
     return sentences
 
 # Phân cụm câu
-def dbscan_clustering(sentences, eps=0.26, min_samples=1):
+def dbscan_clustering(sentences, eps=0.22, min_samples=2):
   # Bước 1: Tạo vector ngữ nghĩa cho các câu
     model = SentenceTransformer('paraphrase-MiniLM-L6-v2')  # Mô hình Sentence-BERT
     embeddings = model.encode(sentences)  # Chuyển các câu thành vector
@@ -17,15 +19,23 @@ def dbscan_clustering(sentences, eps=0.26, min_samples=1):
     # Bước 2: Áp dụng thuật toán DBSCAN
     clustering_model = DBSCAN(eps=eps, min_samples=min_samples, metric='cosine')
     cluster_labels = clustering_model.fit_predict(embeddings)
-
     # Bước 3: Gom nhóm các câu theo cụm
     clusters = {}
+    responses = {}
     for sentence, label in zip(sentences, cluster_labels):
-        clusters.setdefault("intent_" + str(label), []).append(sentence)
+        clusters.setdefault(f"Intent_{label}", []).append(sentence)
+        responses[f"Response_{label}"] = "..."
+    return clusters,responses
 
-    return clusters
-# Ví dụ chạy
-sentences = load_unlabeled_data("intents.txt")
-clusters = dbscan_clustering(sentences)
 
-print(clusters)
+sentences = load_unlabeled_data("New_questions.txt")
+clusters, responses = dbscan_clustering(sentences)
+
+
+with open("Unlableled_intents.json","w") as file1:
+    json.dump(clusters,file1,indent=1)
+
+
+with open("responses.json", "w") as file2:
+    json.dump(responses,file2,indent=1)
+
