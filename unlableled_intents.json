@@ -11,45 +11,27 @@
  ],
  "Intent_1": [
   "How many times a week should I go to the gym?",
-  "When is the best time to go to the gym?"
+  "When is the best time to go to the gym?",
+   "What's the best time to work out?"
  ],
  "Intent_2": [
-  "What's the recommended frequency for gym workouts?"
- ],
- "Intent_3": [
+  "What's the recommended frequency for gym workouts?",
   "How often should I work out in a week?"
  ],
- "Intent_4": [
-  "What's the best time to work out?"
- ],
  "Intent_5": [
-  "Should I exercise in the morning or evening?"
- ],
- "Intent_6": [
+  "Should I exercise in the morning or evening?",
   "Is there an ideal time for workouts?"
  ],
  "Intent_7": [
-  "Do I need a personal trainer?"
- ],
- "Intent_8": [
-  "Is it worth hiring a personal trainer?"
- ],
- "Intent_9": [
-  "Can I work out without a trainer?"
- ],
- "Intent_10": [
+  "Do I need a personal trainer?",
+  "Is it worth hiring a personal trainer?",
+  "Can I work out without a trainer?",
   "Should I consider a gym coach?"
  ],
  "Intent_11": [
-  "How do I warm up before exercising?"
- ],
- "Intent_12": [
-  "What are the best warm-up exercises?"
- ],
- "Intent_13": [
-  "How do I prepare my body for a workout?"
- ],
- "Intent_14": [
+  "How do I warm up before exercising?",
+  "What are the best warm-up exercises?",
+  "How do I prepare my body for a workout?",
   "What's the proper way to warm up?"
  ],
  "Intent_15": [
@@ -60,22 +42,14 @@
  ],
  "Intent_16": [
   "How do I adjust weights on a machine?",
-  "How do I change the weights on a workout machine?"
- ],
- "Intent_17": [
-  "How can I set the weight on gym equipment?"
- ],
- "Intent_18": [
+  "How do I change the weights on a workout machine?",
+  "How can I set the weight on gym equipment?",
   "Can you guide me on adjusting gym machines?"
  ],
  "Intent_19": [
   "What's the proper way to use dumbbells?",
-  "What's the right technique for dumbbell exercises?"
- ],
- "Intent_20": [
-  "How do I lift dumbbells correctly?"
- ],
- "Intent_21": [
+  "What's the right technique for dumbbell exercises?",
+  "How do I lift dumbbells correctly?",
   "Can you explain proper dumbbell usage?"
  ],
  "Intent_22": [
@@ -86,46 +60,28 @@
  ],
  "Intent_23": [
   "How do I create a workout plan?",
-  "Can you help me design a workout routine?"
- ],
- "Intent_24": [
-  "How should I plan my weekly workouts?"
- ],
- "Intent_25": [
-  "What's the best way to organize my gym sessions?"
- ],
- "Intent_26": [
+  "Can you help me design a workout routine?",
+  "How should I plan my weekly workouts?",
+  "What's the best way to organize my gym sessions?",
   "What's the best workout routine for beginners?"
  ],
  "Intent_27": [
   "Can you suggest a beginner-friendly gym plan?",
-  "Can you recommend a beginner-friendly gym class?"
- ],
- "Intent_28": [
-  "What exercises should a beginner do?"
- ],
- "Intent_29": [
+  "Can you recommend a beginner-friendly gym class?",
+  "What exercises should a beginner do?",
   "How should a newbie structure their workout?"
  ],
  "Intent_30": [
   "How do I improve my stamina?",
   "How do I train for better stamina?",
-  "What are good exercises to improve stamina?"
- ],
- "Intent_31": [
-  "What exercises can help boost endurance?"
- ],
- "Intent_32": [
+  "What are good exercises to improve stamina?",
+  "What exercises can help boost endurance?",
   "Can you recommend tips to increase my energy levels?"
  ],
  "Intent_33": [
   "What should I eat before the gym?",
-  "Should I eat before going to the gym?"
- ],
- "Intent_34": [
-  "Can you recommend a good pre-workout snack?"
- ],
- "Intent_35": [
+  "Should I eat before going to the gym?",
+  "Can you recommend a good pre-workout food?",
   "What foods are ideal before exercising?"
  ],
  "Intent_36": [
@@ -138,9 +94,7 @@
  ],
  "Intent_38": [
   "How much water should I drink during a workout?",
-  "What's the recommended water intake for exercising?"
- ],
- "Intent_39": [
+  "What's the recommended water intake for exercising?",
   "How do I stay hydrated while working out?"
  ],
  "Intent_40": [
@@ -148,10 +102,10 @@
  ],
  "Intent_41": [
   "How do I burn belly fat?",
+  "Can you suggest workouts for fat loss?",
   "What are the best exercises to reduce belly fat?"
  ],
  "Intent_42": [
-  "Can you suggest workouts for fat loss?",
   "Is cardio enough for weight loss?",
   "How long should my cardio sessions be for fat loss?",
   "What's the ideal duration of cardio for weight loss?",
@@ -165,45 +119,29 @@
   "How can I lose weight around my midsection?"
  ],
  "Intent_44": [
-  "How much cardio should I do to lose weight?"
- ],
- "Intent_45": [
+  "How much cardio should I do to lose weight?",
   "What's more effective for burning fat?"
  ],
  "Intent_46": [
   "Can I lose fat with just weightlifting?"
  ],
  "Intent_47": [
-  "How do I build muscle quickly?"
- ],
- "Intent_48": [
-  "What are the best tips for fast muscle growth?"
- ],
- "Intent_49": [
-  "How do I bulk up efficiently?"
- ],
- "Intent_50": [
+  "How do I build muscle quickly?",
+  "What are the best tips for fast muscle growth?",
+  "How do I bulk up efficiently?",
   "Can you recommend exercises for gaining muscle?"
  ],
  "Intent_51": [
-  "How many reps and sets should I do for hypertrophy?"
- ],
- "Intent_52": [
-  "What's the optimal range of reps for muscle building?"
- ],
- "Intent_53": [
+  "How many reps and sets should I do for hypertrophy?",
+  "What's the optimal range of reps for muscle building?",
   "How many sets are ideal for gaining mass?"
  ],
  "Intent_54": [
   "Should I focus on high reps or heavy weights?"
  ],
  "Intent_55": [
-  "Should I train to failure every set?"
- ],
- "Intent_56": [
-  "Is training to failure necessary for muscle growth?"
- ],
- "Intent_57": [
+  "Should I train to failure every set?",
+  "Is training to failure necessary for muscle growth?",
   "How often should I push myself to my limits?"
  ],
  "Intent_58": [
