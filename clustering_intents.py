@@ -11,7 +11,7 @@ def load_unlabeled_data(file_path):
     return sentences
 
 # Phân cụm câu
-def dbscan_clustering(sentences, eps=0.22, min_samples=2):
+def dbscan_clustering(sentences, eps=0.2,min_samples = 1):
   # Bước 1: Tạo vector ngữ nghĩa cho các câu
     model = SentenceTransformer('paraphrase-MiniLM-L6-v2')  # Mô hình Sentence-BERT
     embeddings = model.encode(sentences)  # Chuyển các câu thành vector
