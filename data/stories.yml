@@ -29,4 +29,739 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: 
+
+- story: gym_essentials
+  steps:
+  - intent: gym_essentials
+  - action: ans_gym_essentials
+
+- story: gym_frequency
+  steps:
+  - intent: gym_frequency
+  - action: ans_gym_frequency
+
+- story: workout_frequency
+  steps:
+  - intent: workout_frequency
+  - action: ans_workout_frequency
+
+- story: workout_time
+  steps:
+  - intent: workout_time
+  - action: ans_workout_time
+
+- story: personal_trainer
+  steps:
+  - intent: personal_trainer
+  - action: ans_personal_trainer
+
+- story: warm_up
+  steps:
+  - intent: warm_up
+  - action: ans_warm_up
+
+- story: treadmill_usage
+  steps:
+  - intent: treadmill_usage
+  - action: ans_treadmill_usage
+
+- story: adjust_weights
+  steps:
+  - intent: adjust_weights
+  - action: ans_adjust_weights
+
+- story: dumbbell_usage
+  steps:
+  - intent: dumbbell_usage
+  - action: ans_dumbbell_usage
+
+- story: kettlebell_usage
+  steps:
+  - intent: kettlebell_usage
+  - action: ans_kettlebell_usage
+
+- story: create_workout_plan
+  steps:
+  - intent: create_workout_plan
+  - action: ans_create_workout_plan
+
+- story: beginner_gym_plan
+  steps:
+  - intent: beginner_gym_plan
+  - action: ans_beginner_gym_plan
+
+- story: improve_stamina
+  steps:
+  - intent: improve_stamina
+  - action: ans_improve_stamina
+
+- story: pre_workout_food
+  steps:
+  - intent: pre_workout_food
+  - action: ans_pre_workout_food
+
+- story: protein_shakes
+  steps:
+  - intent: protein_shakes
+  - action: ans_protein_shakes
+
+- story: protein_powder
+  steps:
+  - intent: protein_powder
+  - action: ans_protein_powder
+
+- story: water_intake_workout
+  steps:
+  - intent: water_intake_workout
+  - action: ans_water_intake_workout
+
+- story: water_timing
+  steps:
+  - intent: water_timing
+  - action: ans_water_timing
+
+- story: burn_belly_fat
+  steps:
+  - intent: burn_belly_fat
+  - action: ans_burn_belly_fat
+
+- story: cardio_vs_weights
+  steps:
+  - intent: cardio_vs_weights
+  - action: ans_cardio_vs_weights
+
+- story: lose_midsection_fat
+  steps:
+  - intent: lose_midsection_fat
+  - action: ans_lose_midsection_fat
+
+- story: cardio_duration_weight_loss
+  steps:
+  - intent: cardio_duration_weight_loss
+  - action: ans_cardio_duration_weight_loss
+
+- story: fat_loss_weightlifting
+  steps:
+  - intent: fat_loss_weightlifting
+  - action: ans_fat_loss_weightlifting
+
+- story: build_muscle
+  steps:
+  - intent: build_muscle
+  - action: ans_build_muscle
+
+- story: hypertrophy_reps_sets
+  steps:
+  - intent: hypertrophy_reps_sets
+  - action: ans_hypertrophy_reps_sets
+
+- story: reps_vs_weights
+  steps:
+  - intent: reps_vs_weights
+  - action: ans_reps_vs_weights
+
+- story: train_to_failure
+  steps:
+  - intent: train_to_failure
+  - action: ans_train_to_failure
+
+- story: progressive_overload
+  steps:
+  - intent: progressive_overload
+  - action: ans_progressive_overload
+
+- story: workout_recovery
+  steps:
+  - intent: workout_recovery
+  - action: ans_workout_recovery
+
+- story: injury_prevention
+  steps:
+  - intent: injury_prevention
+  - action: ans_injury_prevention
+
+- story: importance_rest_days
+  steps:
+  - intent: importance_rest_days
+  - action: ans_importance_rest_days
+
+- story: increase_strength
+  steps:
+  - intent: increase_strength
+  - action: ans_increase_strength
+
+- story: drop_sets
+  steps:
+  - intent: drop_sets
+  - action: ans_drop_sets
+
+- story: supersets
+  steps:
+  - intent: supersets
+  - action: ans_supersets
+
+- story: enjoyable_cardio
+  steps:
+  - intent: enjoyable_cardio
+  - action: ans_enjoyable_cardio
+
+- story: cardio_alternatives
+  steps:
+  - intent: cardio_alternatives
+  - action: ans_cardio_alternatives
+
+- story: hiit_vs_steady_state
+  steps:
+  - intent: hiit_vs_steady_state
+  - action: ans_hiit_vs_steady_state
+
+- story: hiit_pros_cons
+  steps:
+  - intent: hiit_pros_cons
+  - action: ans_hiit_pros_cons
+
+- story: cardio_fat_burning
+  steps:
+  - intent: cardio_fat_burning
+  - action: ans_cardio_fat_burning
+
+- story: running_speed
+  steps:
+  - intent: running_speed
+  - action: ans_running_speed
+
+- story: improve_running_pace
+  steps:
+  - intent: improve_running_pace
+  - action: ans_improve_running_pace
+
+- story: workout_motivation
+  steps:
+  - intent: workout_motivation
+  - action: ans_workout_motivation
+
+- story: track_progress
+  steps:
+  - intent: track_progress
+  - action: ans_track_progress
+
+- story: fitness_improvement
+  steps:
+  - intent: fitness_improvement
+  - action: ans_fitness_improvement
+
+- story: workout_journal
+  steps:
+  - intent: workout_journal
+  - action: ans_workout_journal
+
+- story: fitness_apps_tracking
+  steps:
+  - intent: fitness_apps_tracking
+  - action: ans_fitness_apps_tracking
+
+- story: overcome_gym_anxiety
+  steps:
+  - intent: overcome_gym_anxiety
+  - action: ans_overcome_gym_anxiety
+
+- story: clean_gym_equipment
+  steps:
+  - intent: clean_gym_equipment
+  - action: ans_clean_gym_equipment
+
+- story: wipe_down_machines
+  steps:
+  - intent: wipe_down_machines
+  - action: ans_wipe_down_machines
+
+- story: share_equipment
+  steps:
+  - intent: share_equipment
+  - action: ans_share_equipment
+
+- story: work_in_equipment
+  steps:
+  - intent: work_in_equipment
+  - action: ans_work_in_equipment
+
+- story: share_gym_equipment
+  steps:
+  - intent: share_gym_equipment
+  - action: ans_share_gym_equipment
+
+- story: rerack_weights
+  steps:
+  - intent: rerack_weights
+  - action: ans_rerack_weights
+
+- story: weights_on_bar
+  steps:
+  - intent: weights_on_bar
+  - action: ans_weights_on_bar
+
+- story: reracking_etiquette
+  steps:
+  - intent: reracking_etiquette
+  - action: ans_reracking_etiquette
+
+- story: importance_reracking
+  steps:
+  - intent: importance_reracking
+  - action: ans_importance_reracking
+
+- story: exercise_mental_health
+  steps:
+  - intent: exercise_mental_health
+  - action: ans_exercise_mental_health
+
+- story: fitness_mental_wellbeing
+  steps:
+  - intent: fitness_mental_wellbeing
+  - action: ans_fitness_mental_wellbeing
+
+- story: exercise_mood_boost
+  steps:
+  - intent: exercise_mood_boost
+  - action: ans_exercise_mood_boost
+
+- story: anxiety_relief_workouts
+  steps:
+  - intent: anxiety_relief_workouts
+  - action: ans_anxiety_relief_workouts
+
+- story: motivation_during_struggles
+  steps:
+  - intent: motivation_during_struggles
+  - action: ans_motivation_during_struggles
+
+- story: exercise_while_down
+  steps:
+  - intent: exercise_while_down
+  - action: ans_exercise_while_down
+
+- story: tired_to_workout
+  steps:
+  - intent: tired_to_workout
+  - action: ans_tired_to_workout
+
+- story: mental_health_fitness_balance
+  steps:
+  - intent: mental_health_fitness_balance
+  - action: ans_mental_health_fitness_balance
+
+- story: improve_flexibility
+  steps:
+  - intent: improve_flexibility
+  - action: ans_improve_flexibility
+
+- story: yoga_benefits
+  steps:
+  - intent: yoga_benefits
+  - action: ans_yoga_benefits
+
+- story: yoga_recovery
+  steps:
+  - intent: yoga_recovery
+  - action: ans_yoga_recovery
+
+- story: improve_posture
+  steps:
+  - intent: improve_posture
+  - action: ans_improve_posture
+
+- story: correct_slouching
+  steps:
+  - intent: correct_slouching
+  - action: ans_correct_slouching
+
+- story: proper_squat
+  steps:
+  - intent: proper_squat
+  - action: ans_proper_squat
+
+- story: squat_mistakes
+  steps:
+  - intent: squat_mistakes
+  - action: ans_squat_mistakes
+
+- story: proper_deadlift
+  steps:
+  - intent: proper_deadlift
+  - action: ans_proper_deadlift
+
+- story: deadlift_belt
+  steps:
+  - intent: deadlift_belt
+  - action: ans_deadlift_belt
+
+- story: bench_press_strength
+  steps:
+  - intent: bench_press_strength
+  - action: ans_bench_press_strength
+
+- story: bench_press_shoulder_pain
+  steps:
+  - intent: bench_press_shoulder_pain
+  - action: ans_bench_press_shoulder_pain
+
+- story: back_arch_bench_press
+  steps:
+  - intent: back_arch_bench_press
+  - action: ans_back_arch_bench_press
+
+- story: sore_muscles_treatment
+  steps:
+  - intent: sore_muscles_treatment
+  - action: ans_sore_muscles_treatment
+
+- story: post_workout_rest
+  steps:
+  - intent: post_workout_rest
+  - action: ans_post_workout_rest
+
+- story: poor_form_injuries
+  steps:
+  - intent: poor_form_injuries
+  - action: ans_poor_form_injuries
+
+- story: stop_exercise_pain
+  steps:
+  - intent: stop_exercise_pain
+  - action: ans_stop_exercise_pain
+
+- story: sleep_muscle_recovery
+  steps:
+  - intent: sleep_muscle_recovery
+  - action: ans_sleep_muscle_recovery
+
+- story: naps_recovery
+  steps:
+  - intent: naps_recovery
+  - action: ans_naps_recovery
+
+- story: strength_training
+  steps:
+  - intent: strength_training
+  - action: ans_strength_training
+
+- story: strength_low_reps
+  steps:
+  - intent: strength_low_reps
+  - action: ans_strength_low_reps
+
+- story: strength_vs_hypertrophy
+  steps:
+  - intent: strength_vs_hypertrophy
+  - action: ans_strength_vs_hypertrophy
+
+- story: combine_strength_hypertrophy
+  steps:
+  - intent: combine_strength_hypertrophy
+  - action: ans_combine_strength_hypertrophy
+
+- story: endurance_training
+  steps:
+  - intent: endurance_training
+  - action: ans_endurance_training
+
+- story: marathon_training
+  steps:
+  - intent: marathon_training
+  - action: ans_marathon_training
+
+- story: running_strength_training
+  steps:
+  - intent: running_strength_training
+  - action: ans_running_strength_training
+
+- story: runner_training_plan
+  steps:
+  - intent: runner_training_plan
+  - action: ans_runner_training_plan
+
+- story: post_workout_food
+  steps:
+  - intent: post_workout_food
+  - action: ans_post_workout_food
+
+- story: post_workout_protein
+  steps:
+  - intent: post_workout_protein
+  - action: ans_post_workout_protein
+
+- story: refuel_after_gym
+  steps:
+  - intent: refuel_after_gym
+  - action: ans_refuel_after_gym
+
+- story: calculate_calories
+  steps:
+  - intent: calculate_calories
+  - action: ans_calculate_calories
+
+- story: calorie_tracking
+  steps:
+  - intent: calorie_tracking
+  - action: ans_calorie_tracking
+
+- story: calories_muscle_building
+  steps:
+  - intent: calories_muscle_building
+  - action: ans_calories_muscle_building
+
+- story: gym_goers_diet
+  steps:
+  - intent: gym_goers_diet
+  - action: ans_gym_goers_diet
+
+- story: high_protein_diet
+  steps:
+  - intent: high_protein_diet
+  - action: ans_high_protein_diet
+
+- story: carbs_for_workout
+  steps:
+  - intent: carbs_for_workout
+  - action: ans_carbs_for_workout
+
+- story: fats_in_fitness_diet
+  steps:
+  - intent: fats_in_fitness_diet
+  - action: ans_fats_in_fitness_diet
+
+- story: stop_weight_loss
+  steps:
+  - intent: stop_weight_loss
+  - action: ans_stop_weight_loss
+
+- story: overcome_weight_loss_plateau
+  steps:
+  - intent: overcome_weight_loss_plateau
+  - action: ans_overcome_weight_loss_plateau
+
+- story: weight_stuck
+  steps:
+  - intent: weight_stuck
+  - action: ans_weight_stuck
+
+- story: resistance_exercise_weight_loss
+  steps:
+  - intent: resistance_exercise_weight_loss
+  - action: ans_resistance_exercise_weight_loss
+
+- story: fix_muscle_imbalance
+  steps:
+  - intent: fix_muscle_imbalance
+  - action: ans_fix_muscle_imbalance
+
+- story: even_out_strength
+  steps:
+  - intent: even_out_strength
+  - action: ans_even_out_strength
+
+- story: unilateral_exercises
+  steps:
+  - intent: unilateral_exercises
+  - action: ans_unilateral_exercises
+
+- story: target_weaker_muscles
+  steps:
+  - intent: target_weaker_muscles
+  - action: ans_target_weaker_muscles
+
+- story: six_pack_abs
+  steps:
+  - intent: six_pack_abs
+  - action: ans_six_pack_abs
+
+- story: abs_through_diet
+  steps:
+  - intent: abs_through_diet
+  - action: ans_abs_through_diet
+
+- story: core_exercises
+  steps:
+  - intent: core_exercises
+  - action: ans_core_exercises
+
+- story: toning_vs_bulking
+  steps:
+  - intent: toning_vs_bulking
+  - action: ans_toning_vs_bulking
+
+- story: tone_or_bulk
+  steps:
+  - intent: tone_or_bulk
+  - action: ans_tone_or_bulk
+
+- story: cutting_bulking
+  steps:
+  - intent: cutting_bulking
+  - action: ans_cutting_bulking
+
+- story: gym_shoes
+  steps:
+  - intent: gym_shoes
+  - action: ans_gym_shoes
+
+- story: weightlifting_shoes
+  steps:
+  - intent: weightlifting_shoes
+  - action: ans_weightlifting_shoes
+
+- story: lifting_gloves
+  steps:
+  - intent: lifting_gloves
+  - action: ans_lifting_gloves
+
+- story: dumbbell_gloves
+  steps:
+  - intent: dumbbell_gloves
+  - action: ans_dumbbell_gloves
+
+- story: weightlifting_belt_purpose
+  steps:
+  - intent: weightlifting_belt_purpose
+  - action: ans_weightlifting_belt_purpose
+
+- story: progress_assessment
+  steps:
+  - intent: progress_assessment
+  - action: ans_progress_assessment
+
+- story: track_weight_changes
+  steps:
+  - intent: track_weight_changes
+  - action: ans_track_weight_changes
+
+- story: measure_muscle_gain
+  steps:
+  - intent: measure_muscle_gain
+  - action: ans_measure_muscle_gain
+
+- story: log_workouts
+  steps:
+  - intent: log_workouts
+  - action: ans_log_workouts
+
+- story: apps_for_exercises
+  steps:
+  - intent: apps_for_exercises
+  - action: ans_apps_for_exercises
+
+- story: record_progress
+  steps:
+  - intent: record_progress
+  - action: ans_record_progress
+
+- story: check_body_fat
+  steps:
+  - intent: check_body_fat
+  - action: ans_check_body_fat
+
+- story: measure_body_fat
+  steps:
+  - intent: measure_body_fat
+  - action: ans_measure_body_fat
+
+- story: prioritize_fat_over_weight
+  steps:
+  - intent: prioritize_fat_over_weight
+  - action: ans_prioritize_fat_over_weight
+
+- story: body_composition_tracking
+  steps:
+  - intent: body_composition_tracking
+  - action: ans_body_composition_tracking
+
+- story: group_classes_beginners
+  steps:
+  - intent: group_classes_beginners
+  - action: ans_group_classes_beginners
+
+- story: zumba_vs_yoga
+  steps:
+  - intent: zumba_vs_yoga
+  - action: ans_zumba_vs_yoga
+
+- story: first_fitness_class
+  steps:
+  - intent: first_fitness_class
+  - action: ans_first_fitness_class
+
+- story: spin_classes_weight_loss
+  steps:
+  - intent: spin_classes_weight_loss
+  - action: ans_spin_classes_weight_loss
+
+- story: cycling_vs_running
+  steps:
+  - intent: cycling_vs_running
+  - action: ans_cycling_vs_running
+
+- story: spin_class_calorie_burn
+  steps:
+  - intent: spin_class_calorie_burn
+  - action: ans_spin_class_calorie_burn
+
+- story: add_spin_to_cardio
+  steps:
+  - intent: add_spin_to_cardio
+  - action: ans_add_spin_to_cardio
+
+- story: avoid_workout_boredom
+  steps:
+  - intent: avoid_workout_boredom
+  - action: ans_avoid_workout_boredom
+
+- story: mix_exercises_session
+  steps:
+  - intent: mix_exercises_session
+  - action: ans_mix_exercises_session
+
+- story: change_workout_routine
+  steps:
+  - intent: change_workout_routine
+  - action: ans_change_workout_routine
+
+- story: set_fitness_goals
+  steps:
+  - intent: set_fitness_goals
+  - action: ans_set_fitness_goals
+
+- story: short_term_vs_long_term_goals
+  steps:
+  - intent: short_term_vs_long_term_goals
+  - action: ans_short_term_vs_long_term_goals
+
+- story: create_gym_milestones
+  steps:
+  - intent: create_gym_milestones
+  - action: ans_create_gym_milestones
+
+- story: achievable_fitness_targets
+  steps:
+  - intent: achievable_fitness_targets
+  - action: ans_achievable_fitness_targets
+
+- story: avoid_overtraining
+  steps:
+  - intent: avoid_overtraining
+  - action: ans_avoid_overtraining
+
+- story: signs_of_overtraining
+  steps:
+  - intent: signs_of_overtraining
+  - action: ans_signs_of_overtraining
+
+- story: rest_days_when_tired
+  steps:
+  - intent: rest_days_when_tired
+  - action: ans_rest_days_when_tired
+
+- story: intensity_vs_recovery
+  steps:
+  - intent: intensity_vs_recovery
+  - action: ans_intensity_vs_recovery
+
