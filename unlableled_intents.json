@@ -1,5 +1,5 @@
 {
- "Intent_0": [
+ "gym_essentials": [
   "What should I bring to the gym?",
   "What do I need for a gym session?",
   "What essentials should I pack for the gym?",
@@ -9,103 +9,103 @@
   "What's the first thing to do at the gym as a beginner?",
   "How should I start my gym journey?"
  ],
- "Intent_1": [
+ "gym_frequency": [
   "How many times a week should I go to the gym?",
   "When is the best time to go to the gym?",
    "What's the best time to work out?"
  ],
- "Intent_2": [
+ "workout_frequency": [
   "What's the recommended frequency for gym workouts?",
   "How often should I work out in a week?"
  ],
- "Intent_5": [
+ "workout_time": [
   "Should I exercise in the morning or evening?",
   "Is there an ideal time for workouts?"
  ],
- "Intent_7": [
+ "personal_trainer": [
   "Do I need a personal trainer?",
   "Is it worth hiring a personal trainer?",
   "Can I work out without a trainer?",
   "Should I consider a gym coach?"
  ],
- "Intent_11": [
+ "warm_up": [
   "How do I warm up before exercising?",
   "What are the best warm-up exercises?",
   "How do I prepare my body for a workout?",
   "What's the proper way to warm up?"
  ],
- "Intent_15": [
+ "treadmill_usage": [
   "How do I use the treadmill?",
   "What's the correct way to use a treadmill?",
   "Can you explain how to run on a treadmill?",
   "How do I safely use the treadmill?"
  ],
- "Intent_16": [
+ "adjust_weights": [
   "How do I adjust weights on a machine?",
   "How do I change the weights on a workout machine?",
   "How can I set the weight on gym equipment?",
   "Can you guide me on adjusting gym machines?"
  ],
- "Intent_19": [
+ "dumbbell_usage": [
   "What's the proper way to use dumbbells?",
   "What's the right technique for dumbbell exercises?",
   "How do I lift dumbbells correctly?",
   "Can you explain proper dumbbell usage?"
  ],
- "Intent_22": [
+ "kettlebell_usage": [
   "How do I use kettlebells?",
   "What's the best way to work out with kettlebells?",
   "How do I lift kettlebells properly?",
   "Can you show me kettlebell exercises?"
  ],
- "Intent_23": [
+ "create_workout_plan": [
   "How do I create a workout plan?",
   "Can you help me design a workout routine?",
   "How should I plan my weekly workouts?",
   "What's the best way to organize my gym sessions?",
   "What's the best workout routine for beginners?"
  ],
- "Intent_27": [
+ "beginner_gym_plan": [
   "Can you suggest a beginner-friendly gym plan?",
   "Can you recommend a beginner-friendly gym class?",
   "What exercises should a beginner do?",
   "How should a newbie structure their workout?"
  ],
- "Intent_30": [
+ "improve_stamina": [
   "How do I improve my stamina?",
   "How do I train for better stamina?",
   "What are good exercises to improve stamina?",
   "What exercises can help boost endurance?",
   "Can you recommend tips to increase my energy levels?"
  ],
- "Intent_33": [
+ "pre_workout_food": [
   "What should I eat before the gym?",
   "Should I eat before going to the gym?",
   "Can you recommend a good pre-workout food?",
   "What foods are ideal before exercising?"
  ],
- "Intent_36": [
+ "protein_shakes": [
   "Do I need protein shakes?",
   "Are protein shakes necessary for muscle growth?",
   "Are protein shakes worth it for gym-goers?"
  ],
- "Intent_37": [
+ "protein_powder": [
   "Should I include protein powder in my diet?"
  ],
- "Intent_38": [
+ "water_intake_workout": [
   "How much water should I drink during a workout?",
   "What's the recommended water intake for exercising?",
   "How do I stay hydrated while working out?"
  ],
- "Intent_40": [
+ "water_timing": [
   "Should I drink water before, during, or after exercise?"
  ],
- "Intent_41": [
+ "burn_belly_fat": [
   "How do I burn belly fat?",
   "Can you suggest workouts for fat loss?",
   "What are the best exercises to reduce belly fat?"
  ],
- "Intent_42": [
+ "cardio_vs_weights": [
   "Is cardio enough for weight loss?",
   "How long should my cardio sessions be for fat loss?",
   "What's the ideal duration of cardio for weight loss?",
@@ -115,48 +115,48 @@
   "Should I include strength training for fat loss?",
   "Is lifting weights better than cardio for losing fat?"
  ],
- "Intent_43": [
+ "lose_midsection_fat": [
   "How can I lose weight around my midsection?"
  ],
- "Intent_44": [
+ "cardio_duration_weight_loss": [
   "How much cardio should I do to lose weight?",
   "What's more effective for burning fat?"
  ],
- "Intent_46": [
+ "fat_loss_weightlifting": [
   "Can I lose fat with just weightlifting?"
  ],
- "Intent_47": [
+ "build_muscle": [
   "How do I build muscle quickly?",
   "What are the best tips for fast muscle growth?",
   "How do I bulk up efficiently?",
   "Can you recommend exercises for gaining muscle?"
  ],
- "Intent_51": [
+ "hypertrophy_reps_sets": [
   "How many reps and sets should I do for hypertrophy?",
   "What's the optimal range of reps for muscle building?",
   "How many sets are ideal for gaining mass?"
  ],
- "Intent_54": [
+ "reps_vs_weights": [
   "Should I focus on high reps or heavy weights?"
  ],
- "Intent_55": [
+ "train_to_failure": [
   "Should I train to failure every set?",
   "Is training to failure necessary for muscle growth?",
   "How often should I push myself to my limits?"
  ],
- "Intent_58": [
+ "progressive_overload": [
   "What's the best approach for progressive overload?",
   "What is progressive overload, and how do I apply it?",
   "What's the principle of progressive overload?"
  ],
- "Intent_59": [
+ "workout_recovery": [
   "How do I recover from a tough workout?",
   "What's the best way to recover after a workout?",
   "What's the best way to deal with muscle soreness?",
-  "How do I speed up recovery after exercise?"
+  "How do I speed up recovery after exercise?",
+  "Should I take supplements for recovery?"
  ],
- "Intent_62": [
-  "Should I take supplements for recovery?",
+ "injury_prevention": [
   "How do I prevent injuries at the gym?",
   "How do I prevent gym injuries?",
   "What are the most common gym injuries and how to avoid them?",
@@ -164,418 +164,418 @@
   "How do I avoid hurting myself during exercise?",
   "Can you suggest injury prevention strategies?"
  ],
- "Intent_67": [
+ "importance_rest_days": [
   "How important are rest days for progress?",
   "Can I work out without taking breaks?",
   "What happens if I skip rest days?"
  ],
- "Intent_70": [
+ "increase_strength": [
   "How can I increase strength over time?",
   "How do I increase my strength?",
   "How do I gradually lift heavier weights?",
   "How can I lift heavier weights over time?"
  ],
- "Intent_72": [
+ "drop_sets": [
   "Should I use drop sets for muscle growth?",
   "Are drop sets effective for building muscle?",
   "How do drop sets work in strength training?",
   "Should I add drop sets to my routine?"
  ],
- "Intent_75": [
+ "supersets": [
   "What are supersets, and how do I perform them?",
   "Can supersets help me save time at the gym?",
   "How do I pair exercises for supersets?",
   "Should I try supersets for muscle definition?"
  ],
- "Intent_79": [
+ "enjoyable_cardio": [
   "How do I make cardio more enjoyable?",
   "How do I keep cardio interesting?",
   "What are fun ways to do cardio?"
  ],
- "Intent_81": [
+ "cardio_alternatives": [
   "Can you suggest alternatives to running for cardio?"
  ],
- "Intent_82": [
+ "hiit_vs_steady_state": [
   "What's the difference between HIIT and steady-state cardio?",
   "Should I do HIIT or long cardio sessions?"
  ],
- "Intent_84": [
+ "hiit_pros_cons": [
   "What are the pros and cons of HIIT vs. steady-state?"
  ],
- "Intent_85": [
+ "cardio_fat_burning": [
   "Which cardio method burns more fat?"
  ],
- "Intent_86": [
+ "running_speed": [
   "How do I improve my running speed?",
   "What exercises can help me run faster?"
  ],
- "Intent_88": [
+ "improve_running_pace": [
   "How do I increase my pace for long-distance runs?",
   "Can you suggest tips to boost running speed?"
  ],
- "Intent_90": [
+ "workout_motivation": [
   "How do I stay motivated to work out?",
   "What should I do if I lose motivation to go to the gym?",
   "How do I keep pushing myself to exercise?",
   "Can you give me tips to stay consistent?"
  ],
- "Intent_94": [
+ "track_progress": [
   "What's the best way to track my progress?"
  ],
- "Intent_95": [
+ "fitness_improvement": [
   "How do I measure my fitness improvement?"
  ],
- "Intent_96": [
+ "workout_journal": [
   "Should I keep a workout journal?",
   "Should I keep a journal of my gym sessions?"
  ],
- "Intent_97": [
+ "fitness_apps_tracking": [
   "Are fitness apps useful for tracking progress?",
   "Can fitness apps help with tracking results?"
  ],
- "Intent_98": [
+ "overcome_gym_anxiety": [
   "How do I overcome gym anxiety?",
   "What should I do if I feel intimidated at the gym?",
   "How do I deal with self-consciousness while working out?",
   "Can you help me feel more comfortable at the gym?"
  ],
- "Intent_102": [
+ "clean_gym_equipment": [
   "What's the proper way to clean gym equipment?",
   "Is cleaning gym equipment necessary?",
   "How do I sanitize equipment in the gym?"
  ],
- "Intent_103": [
+ "wipe_down_machines": [
   "Should I wipe down machines after using them?"
  ],
- "Intent_105": [
+ "share_equipment": [
   "Is it okay to ask someone to share equipment?",
   "How do I politely request to use a machine someone's using?"
  ],
- "Intent_107": [
+ "work_in_equipment": [
   "Can I work in with someone on the same machine?"
  ],
- "Intent_108": [
+ "share_gym_equipment": [
   "What's the best way to share gym equipment?"
  ],
- "Intent_109": [
+ "rerack_weights": [
   "Should I re-rack weights after use?"
  ],
- "Intent_110": [
+ "weights_on_bar": [
   "Is it rude to leave weights on the bar?"
  ],
- "Intent_111": [
+ "reracking_etiquette": [
   "What's the proper etiquette for re-racking weights?"
  ],
- "Intent_112": [
+ "importance_reracking": [
   "Why is re-racking important in gyms?"
  ],
- "Intent_113": [
+ "exercise_mental_health": [
   "How does exercise improve mental health?",
   "Can working out help reduce stress?"
  ],
- "Intent_115": [
+ "fitness_mental_wellbeing": [
   "What's the connection between fitness and mental well-being?"
  ],
- "Intent_116": [
+ "exercise_mood_boost": [
   "Does regular exercise boost mood?"
  ],
- "Intent_117": [
+ "anxiety_relief_workouts": [
   "What are good workouts for anxiety relief?",
   "Are there specific exercises to calm the mind?",
   "What's the best way to use fitness to manage anxiety?"
  ],
- "Intent_121": [
+ "motivation_during_struggles": [
   "How do I stay motivated during mental health struggles?"
  ],
- "Intent_122": [
+ "exercise_while_down": [
   "Can exercise help when I feel down?"
  ],
- "Intent_123": [
+ "tired_to_workout": [
   "What should I do if I'm too tired to work out?"
  ],
- "Intent_124": [
+ "mental_health_fitness_balance": [
   "How do I balance mental health and fitness goals?"
  ],
- "Intent_125": [
+ "improve_flexibility": [
   "What are the best stretches for flexibility?",
   "How do I improve my range of motion?",
   "Can you recommend stretches for tight muscles?",
   "How do I get more flexible?"
  ],
- "Intent_129": [
+ "yoga_benefits": [
   "Should I include yoga in my workout routine?",
   "What are the benefits of yoga for gym-goers?",
   "Can yoga improve my lifting performance?"
  ],
- "Intent_132": [
+ "yoga_recovery": [
   "Is yoga good for recovery days?"
  ],
- "Intent_133": [
+ "improve_posture": [
   "How do I improve my posture?",
   "What exercises help with better posture?",
   "Can poor posture affect my gym performance?"
  ],
- "Intent_135": [
+ "correct_slouching": [
   "How do I correct slouching through workouts?"
  ],
- "Intent_136": [
+ "proper_squat": [
   "How do I perform a proper squat?",
   "Can you explain the correct squat form?"
  ],
- "Intent_138": [
+ "squat_mistakes": [
   "What are common mistakes when squatting?",
   "How do I squat without hurting my knees?"
  ],
- "Intent_140": [
+ "proper_deadlift": [
   "What's the right way to deadlift?",
   "Can you guide me on deadlift technique?",
   "How do I prevent back pain while deadlifting?"
  ],
- "Intent_142": [
+ "deadlift_belt": [
   "Should I use a belt for deadlifts?",
   "Should I use a belt for heavy lifting?",
   "How do I properly wear a lifting belt?",
   "Is a belt necessary for deadlifts?"
  ],
- "Intent_143": [
+ "bench_press_strength": [
   "How do I increase my bench press strength?",
   "What are tips for improving my bench press?"
  ],
- "Intent_144": [
+ "bench_press_shoulder_pain": [
   "How do I avoid shoulder pain while bench pressing?"
  ],
- "Intent_145": [
+ "back_arch_bench_press": [
   "Should I arch my back during bench presses?"
  ],
- "Intent_146": [
+ "sore_muscles_treatment": [
   "Should I use ice or heat for sore muscles?"
  ],
- "Intent_147": [
+ "post_workout_rest": [
   "How long should I rest after a tough session?",
   "Can stretching reduce soreness?"
  ],
- "Intent_149": [
+ "poor_form_injuries": [
   "Can poor form lead to injuries?"
  ],
- "Intent_150": [
+ "stop_exercise_pain": [
   "Should I stop exercising if something hurts?"
  ],
- "Intent_151": [
+ "sleep_muscle_recovery": [
   "How important is sleep for muscle recovery?",
   "Does lack of sleep affect gym performance?",
   "How many hours of sleep do I need for recovery?"
  ],
- "Intent_154": [
+ "naps_recovery": [
   "Can naps help with post-workout recovery?"
  ],
- "Intent_155": [
+ "strength_training": [
   "What are the best exercises for building strength?"
  ],
- "Intent_156": [
+ "strength_low_reps": [
   "Should I focus on low reps for strength training?"
  ],
- "Intent_157": [
+ "strength_vs_hypertrophy": [
   "What's the difference between strength and hypertrophy training?",
   "How does strength training compare to muscle growth workouts?",
   "Should I prioritize strength or size?"
  ],
- "Intent_160": [
+ "combine_strength_hypertrophy": [
   "Can I combine strength and hypertrophy in one routine?"
  ],
- "Intent_161": [
+ "endurance_training": [
   "How do I build endurance for long workouts?",
   "How do I last longer during cardio sessions?",
   "Can lifting weights help with endurance?"
  ],
- "Intent_164": [
+ "marathon_training": [
   "What's the best way to train for a marathon?",
   "How do I prepare for a long-distance race?"
  ],
- "Intent_166": [
+ "running_strength_training": [
   "Should I combine running with strength training?"
  ],
- "Intent_167": [
+ "runner_training_plan": [
   "What's the ideal training plan for runners?"
  ],
- "Intent_168": [
+ "post_workout_food": [
   "What should I eat after a workout?",
   "Can you recommend good post-exercise meals?"
  ],
- "Intent_170": [
+ "post_workout_protein": [
   "Is protein necessary right after a workout?"
  ],
- "Intent_171": [
+ "refuel_after_gym": [
   "How do I refuel after the gym?"
  ],
- "Intent_172": [
+ "calculate_calories": [
   "How do I calculate my calorie needs?",
   "Can you guide me on calorie counting?"
  ],
- "Intent_173": [
+ "calorie_tracking": [
   "What's the best way to track calories for fitness goals?"
  ],
- "Intent_174": [
+ "calories_muscle_building": [
   "Should I eat more calories when building muscle?"
  ],
- "Intent_176": [
+ "gym_goers_diet": [
   "What's the best diet for gym-goers?"
  ],
- "Intent_177": [
+ "high_protein_diet": [
   "Should I follow a high-protein diet for fitness?"
  ],
- "Intent_178": [
+ "carbs_for_workout": [
   "Are carbs necessary for working out?"
  ],
- "Intent_179": [
+ "fats_in_fitness_diet": [
   "What's the role of fats in a fitness diet?"
  ],
- "Intent_180": [
+ "stop_weight_loss": [
   "Why have I stopped losing weight?"
  ],
- "Intent_181": [
+ "overcome_weight_loss_plateau": [
   "How do I overcome a weight-loss plateau?",
   "What changes can I make to keep losing fat?"
  ],
- "Intent_183": [
+ "weight_stuck": [
   "Why is my weight stuck even with exercise?"
  ],
- "Intent_184": [
+ "resistance_exercise_weight_loss": [
   "What's the role of resistance exercises in losing weight?"
  ],
- "Intent_185": [
+ "fix_muscle_imbalance": [
   "How do I fix muscle imbalances?"
  ],
- "Intent_186": [
+ "even_out_strength": [
   "What's the best way to even out strength on both sides?"
  ],
- "Intent_187": [
+ "unilateral_exercises": [
   "Can unilateral exercises help with asymmetry?"
  ],
- "Intent_188": [
+ "target_weaker_muscles": [
   "How do I target weaker muscles?"
  ],
- "Intent_189": [
+ "six_pack_abs": [
   "What's the best way to get a six-pack?",
   "How do I train my abs effectively?"
  ],
- "Intent_191": [
+ "abs_through_diet": [
   "Can I achieve visible abs through diet alone?"
  ],
- "Intent_192": [
+ "core_exercises": [
   "What are the most effective core exercises?"
  ],
- "Intent_193": [
+ "toning_vs_bulking": [
   "What's the difference between toning and bulking?"
  ],
- "Intent_194": [
+ "tone_or_bulk": [
   "Should I focus on toning or bulking first?",
   "How do I know if I need to tone or bulk?"
  ],
- "Intent_196": [
+ "cutting_bulking": [
   "Can you explain the concept of cutting and bulking?"
  ],
- "Intent_197": [
+ "gym_shoes": [
   "What shoes should I wear to the gym?",
   "How do I choose gym-appropriate shoes?"
  ],
- "Intent_198": [
+ "weightlifting_shoes": [
   "Are there specific shoes for weightlifting?",
   "What's the best footwear for cardio exercises?"
  ],
- "Intent_200": [
+ "lifting_gloves": [
   "Do I need gloves for weightlifting?",
   "Are lifting gloves helpful for grip?",
   "What are alternatives to lifting gloves?"
  ],
- "Intent_202": [
+ "dumbbell_gloves": [
   "Should I wear gloves while using dumbbells?"
  ],
- "Intent_203": [
+ "weightlifting_belt_purpose": [
   "What's the purpose of a weightlifting belt?"
  ],
- "Intent_204": [
+ "progress_assessment": [
   "How do I know if I'm making progress?"
  ],
- "Intent_205": [
+ "track_weight_changes": [
   "Should I track my weight changes weekly?"
  ],
- "Intent_206": [
+ "measure_muscle_gain": [
   "How do I measure muscle gain?"
  ],
- "Intent_207": [
+ "log_workouts": [
   "What's the best way to log my workouts?"
  ],
- "Intent_208": [
+ "apps_for_exercises": [
   "Are digital apps better for tracking exercises?"
  ],
- "Intent_209": [
+ "record_progress": [
   "How do I record my progress over time?"
  ],
- "Intent_210": [
+ "check_body_fat": [
   "How often should I check my body fat percentage?"
  ],
- "Intent_211": [
+ "measure_body_fat": [
   "What's the most accurate way to measure body fat?"
  ],
- "Intent_212": [
+ "prioritize_fat_over_weight": [
   "Should I prioritize body fat over weight?"
  ],
- "Intent_213": [
+ "body_composition_tracking": [
   "How do I track changes in body composition?"
  ],
- "Intent_214": [
+ "group_classes_beginners": [
   "What's the best group class for beginners?"
  ],
- "Intent_215": [
+ "zumba_vs_yoga": [
   "Should I try Zumba or yoga as a beginner?"
  ],
- "Intent_216": [
+ "first_fitness_class": [
   "How do I join my first fitness class?"
  ],
- "Intent_217": [
+ "spin_classes_weight_loss": [
   "Are spin classes effective for fat loss?"
  ],
- "Intent_218": [
+ "cycling_vs_running": [
   "Is cycling better than running for losing weight?"
  ],
- "Intent_219": [
+ "spin_class_calorie_burn": [
   "What's the calorie burn potential of spin classes?"
  ],
- "Intent_220": [
+ "add_spin_to_cardio": [
   "Should I add spin classes to my cardio routine?"
  ],
- "Intent_221": [
+ "avoid_workout_boredom": [
   "How do I keep my workouts exciting?",
   "What's the best way to avoid workout boredom?"
  ],
- "Intent_223": [
+ "mix_exercises_session": [
   "Can I mix different exercises in one session?"
  ],
- "Intent_224": [
+ "change_workout_routine": [
   "How often should I change my routine?"
  ],
- "Intent_225": [
+ "set_fitness_goals": [
   "What's the best way to set fitness goals?"
  ],
- "Intent_226": [
+ "short_term_vs_long_term_goals": [
   "Should I aim for short-term or long-term goals?"
  ],
- "Intent_227": [
+ "create_gym_milestones": [
   "How do I create realistic gym milestones?"
  ],
- "Intent_228": [
+ "achievable_fitness_targets": [
   "Can you help me set achievable fitness targets?"
  ],
- "Intent_229": [
+ "avoid_overtraining": [
   "How do I avoid overtraining?"
  ],
- "Intent_230": [
+ "signs_of_overtraining": [
   "What are the signs that I'm working out too much?"
  ],
- "Intent_231": [
+ "rest_days_when_tired": [
   "Should I take more rest days if I feel tired?"
  ],
- "Intent_232": [
+ "intensity_vs_recovery": [
   "How do I balance workout intensity and recovery?"
  ]
 }

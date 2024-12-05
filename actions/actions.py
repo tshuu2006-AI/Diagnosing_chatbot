@@ -1,24 +1,32 @@
-from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
-from transformers import pipeline
+from rasa_sdk import Action
+from rasa_sdk.events import EventType
+from groq import Groq
+import json
 
-class ActionClassifyIntent(Action):
-    def name(self):
-        return "action_classify_intent"
-
+with open("api_keys.json","r") as api_keys:
+    api_key = json.load(api_keys)["api_key"]
+class ActionAnswerWithModel(Action):
     def __init__(self):
-        self.classifier = pipeline("text-classification", model="bert-base-uncased")
+        super().__init__()
+        # Load your model (e.g., a question-answering model)
+        self.model = Groq(api_key=api_key)
+        
 
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict):
-        user_message = tracker.latest_message.get("text")
-        intent_prediction = self.classifier(user_message)
-        predicted_intent = intent_prediction[0]["label"]
-        confidence = intent_prediction[0]["score"]
+    def name(self) -> str:
+        return "action_answer_with_model"
 
-        # Ghi lại câu nếu độ tin cậy thấp 
-        if confidence < 0.5:  # Ngưỡng confidence
-            with open("unlabeled_data.txt", "a") as f:
-                f.write(f"{user_message}\n")
-            dispatcher.utter_message(text="Tôi chưa hiểu ý bạn, tôi sẽ học thêm.")
-        else:
-            dispatcher.utter_message(text=f"Intent dự đoán: {predicted_intent}")
+    async def run(self, dispatcher, tracker, domain) -> list[EventType]:
+        # Extract user question from tracker
+        user_question = tracker.latest_message.get("text")
+        
+        # Use your model to process the input
+        result = self.model({
+            "question": user_question,
+            "context": "Provide relevant context for your model to work."
+        })
+        
+        # Respond with the model's answer
+        answer = result.get("answer", "I couldn't find an answer.")
+        dispatcher.utter_message(text=answer)
+
+        return []
