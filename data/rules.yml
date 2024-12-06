@@ -751,3 +751,8 @@ rules:
   steps:
     - intent: nlu_fallback
     - action: action_low_confidence_fallback
+
+- rule: Say hi to anytime the user greet
+  steps:
+    - intent: greet
+    - action: utter_greet

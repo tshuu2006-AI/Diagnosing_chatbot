@@ -32,13 +32,13 @@ class ActionLowConfidenceFallback(Action):
           keys = json.load(keys_file)
       
       #load model
-      client = Groq(api_key=keys["key_api_groq"])
+      client = Groq(api_key=keys["groq_api_key"])
 
       chat_completion = client.chat.completions.create(
           messages=[
               {
                   "role": "system",
-                  "content": "you are a helpful and friendly gym assistant."
+                  "content": "Your name is Hoang Sang. You are a helpful and friendly gym assistant."
               },
               {
                   "role": "user",

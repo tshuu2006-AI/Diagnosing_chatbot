@@ -156,6 +156,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - nlu_fallback
 
 responses:
   utter_ans_intensity_vs_recovery:
@@ -616,7 +617,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a Hoang Sang, powered by Thang Huu."
 
 actions:
   - action_low_confidence_fallback
