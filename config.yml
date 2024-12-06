@@ -10,7 +10,11 @@ assistant_id: 20241202-225342-frayed-journal
 # https://rasa.com/docs/rasa/nlu/components/
 language: en
 
-pipeline: null
+pipeline:
+- name: FallbackClassifier
+  threshold: 0.3  # Confidence threshold
+
+
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
@@ -48,3 +52,5 @@ policies: null
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
+action_endpoint:
+  url: "http://localhost:5055/webhook"
