@@ -13,7 +13,7 @@ intent_keys = list(intents.keys())
 intent_values = list(intents.values())
 response_values = list(responses.values())
 for intent_key in intent_keys:
-  responses_keys.append(f"ans_{intent_key}")
+  responses_keys.append(f"utter_ans_{intent_key}")
 
 
 Data = {"intent_keys": intent_keys,

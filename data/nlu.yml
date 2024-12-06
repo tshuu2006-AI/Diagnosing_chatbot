@@ -728,7 +728,6 @@ nlu:
     - What do I need for a gym session?
     - What should I bring to the gym?
 
-
 - intent: greet
   examples: |
     - hey
