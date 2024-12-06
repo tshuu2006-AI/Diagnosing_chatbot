@@ -36,20 +36,36 @@ if __name__ == "__main__":
   for i in range(DF_size):
     domain_data.insert(mark_responses,f"  {responses_keys[i]}:\n  - text: \"{response_values[i]}\"\n\n")
 
-  with open("domain.yml","w") as domain:
+  with open("domain.yml","w",encoding="utf-8") as domain:
     domain.writelines(domain_data)
 
-  with open("data/nlu.yml","a") as nlu:
-    for i in range(DF_size):
-      nlu.write(f"- intent: {intent_keys[i]}\n  examples: |\n")
-      for sentence in intent_values[i]:
-        nlu.write(f"    - {sentence}\n")
-      nlu.write("\n")
+  with open("data/nlu.yml","r") as nlu:
+    nlu_data = nlu.readlines()
 
-  with open("data/stories.yml","a") as stories:
-    for i in range(DF_size):
-      stories.write(f"- story: {intent_keys[i]}\n  steps:\n")
-      stories.write(f"  - intent: {intent_keys[i]}\n  - action: {responses_keys[i]}\n\n")
+  mark_nlu = nlu_data.index("nlu:\n") + 1 
+  for i in range(DF_size):
+    for question in intent_values[i]:
+      nlu_data.insert(mark_nlu,f"    - {question}\n" )
+    nlu_data.insert(mark_nlu,f"  examples: |\n")
+    nlu_data.insert(mark_nlu,f"- intent: {intent_keys[i]}\n")
+    nlu_data.insert(mark_nlu,"\n")
+  with open("data/nlu.yml","w") as nlu:
+    nlu.writelines(nlu_data)
+
+  with open("data/rules.yml","r") as rules:
+    rules_data = rules.readlines()
+
+  mark_rule = rules_data.index("rules:\n") + 1
+  for i in range(DF_size):
+    rules_data.insert(mark_rule,f"  - action: {responses_keys[i]}\n")
+    rules_data.insert(mark_rule,f"  - intent: {intent_keys[i]}\n")
+    rules_data.insert(mark_rule,f"  steps:\n")
+    rules_data.insert(mark_rule,f"- rule: response to {intent_keys[i]}\n")
+    rules_data.insert(mark_rule,"\n" )
+  
+  with open("data/rules.yml","w") as rules:
+    rules.writelines(rules_data)
+
 
 
 
