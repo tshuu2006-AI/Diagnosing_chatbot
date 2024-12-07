@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-
+#Load the new unlabled intents and responses to dataframe
 with open("unlableled_intents.json", "r",encoding="utf-8") as file:
   intents = json.load(file)
 
@@ -23,7 +23,7 @@ Data = {"intent_keys": intent_keys,
 DF = pd.DataFrame(Data)
 DF_size = len(intent_keys)
 
-
+#Insert new intents and responses to the rasa configuring file.
 if __name__ == "__main__":
   with open("domain.yml","r") as domain:
     domain_data = domain.readlines()
