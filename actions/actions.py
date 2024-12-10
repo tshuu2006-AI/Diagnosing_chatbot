@@ -48,4 +48,4 @@ class ActionLowConfidenceFallback(Action):
           model="llama3-8b-8192",
       )
       response = chat_completion.choices[0].message.content
-      return f"I processed your question using an external model:\n '{response}'"
+      return f"\n{response}"
