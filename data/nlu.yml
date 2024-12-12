@@ -58,6 +58,7 @@ nlu:
 - intent: cycling_vs_running
   examples: |
     - Is cycling better than running for losing weight?
+    
 
 - intent: spin_classes_weight_loss
   examples: |
