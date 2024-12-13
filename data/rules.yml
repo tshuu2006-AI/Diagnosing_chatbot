@@ -2,6 +2,11 @@ version: "3.1"
 
 rules:
 
+- rule: response to recommend_muscle_group_exercise
+  steps:
+  - intent: recommend_muscle_group_exercise
+  - action: action_recommend_exercise
+  
 - rule: response to intensity_vs_recovery
   steps:
   - intent: intensity_vs_recovery
