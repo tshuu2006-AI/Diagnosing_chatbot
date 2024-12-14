@@ -11,6 +11,7 @@ class ActionRecommendExercise(Action):
             tracker: Tracker,
             domain: Dict) -> List[Dict]:
         muscle_group = tracker.get_slot("muscle_group")
+        user_message = tracker.latest_message.get("text")
         flag = True
         if muscle_group == "chest":
             exercise = "Bench Press or Push-Up"
@@ -39,6 +40,8 @@ class ActionRecommendExercise(Action):
             text = f"You can try {exercise} for {muscle_group} building. {method}\n. Here are the links for better instruction:\n{link}"
         else:
             text = "I don't have the instructions for the muscle group that you want to train yet"
+            with open("New_questions.txt","a") as file:
+                file.write(f"{user_message}\n")
         dispatcher.utter_message(
             text=text
         )
