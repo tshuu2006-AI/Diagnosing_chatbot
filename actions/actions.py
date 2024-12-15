@@ -82,7 +82,7 @@ class ActionLowConfidenceFallback(Action):
       chat_completion = client.chat.completions.create(
           messages=[
               {
-                  "role": "system",
+                  "role": "system", #Vài
                   "content": "Your name is Hoang Sang. You are a helpful and friendly gym assistant."
               },
               {
