@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <style>
+    /* CSS cơ bản cho khung chat */
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      max-height: 400px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .chat-header {
+      background: #0078d7;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .chat-body {
+      padding: 10px;
+      height: 300px;
+      overflow-y: auto;
+    }
+    .chat-footer {
+      display: flex;
+    }
+    .chat-footer input {
+      flex: 1;
+      padding: 10px;
+    }
+    .chat-footer button {
+      background: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbot">
+    <div class="chat-header">Chatbot</div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-footer">
+      <input type="text" id="user-input" placeholder="Nhập tin nhắn...">
+      <button onclick="sendMessage()">Gửi</button>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>
