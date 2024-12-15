@@ -3,92 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rasa Chatbot</title>
+    <title>Gym Chatbot</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        #chat-container {
-            width: 400px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
             overflow: hidden;
         }
 
+        #chat-container {
+            width: 450px;
+            height: 650px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #chat-header {
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            background: linear-gradient(135deg, #16a085, #27ae60);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
         #chat-box {
-            height: 400px;
-            overflow-y: auto;
+            flex-grow: 1;
             padding: 15px;
-            border-bottom: 1px solid #ddd;
+            overflow-y: auto;
+            color: #ffffff;
+            scrollbar-width: thin;
+            scrollbar-color: #27ae60 rgba(255, 255, 255, 0.2);
         }
 
-        #chat-box .message {
+        #chat-box::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        #chat-box::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #1abc9c, #2ecc71);
+            border-radius: 5px;
+        }
+
+        .message {
             margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 20px;
+            animation: fadeIn 0.5s ease-in-out;
+            max-width: 70%;
+            word-wrap: break-word;
+            font-size: 1rem;
         }
 
-        #chat-box .user {
-            text-align: right;
-            color: #007BFF;
+        .user {
+            margin-left: auto;
+            background: linear-gradient(135deg, #16a085, #27ae60);
+            color: #ffffff;
         }
 
-        #chat-box .bot {
-            text-align: left;
-            color: #28A745;
+        .bot {
+            margin-right: auto;
+            background: linear-gradient(135deg, #3498db, #2ecc71);
+            color: #ffffff;
         }
 
+        /* Input Section */
         #input-container {
             display: flex;
-            padding: 10px;
-            background-color: #f9f9f9;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         #chat-input {
-            flex: 1;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 10px;
-            font-size: 1rem;
-        }
-
-        #send-btn {
-            margin-left: 10px;
+            flex-grow: 1;
             padding: 10px 15px;
-            font-size: 1rem;
             border: none;
-            border-radius: 4px;
-            background-color: #007BFF;
-            color: white;
-            cursor: pointer;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
             transition: background-color 0.3s;
         }
 
+        #chat-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        #send-btn {
+            margin-left: 15px;
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #16a085, #27ae60);
+            color: #ffffff;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
         #send-btn:hover {
-            background-color: #0056b3;
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Rasa Chatbot</h1>
     <div id="chat-container">
+        <div id="chat-header">Gym Chatbot</div>
         <div id="chat-box"></div>
         <div id="input-container">
-            <input id="chat-input" type="text" placeholder="Type your message...">
-            <button id="send-btn">Send</button>
+            <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off">
+            <button id="send-btn">➤</button>
         </div>
     </div>
 
@@ -100,13 +160,13 @@
         function appendMessage(sender, message) {
             const msgDiv = document.createElement('div');
             msgDiv.classList.add('message', sender);
-            msgDiv.textContent = `${sender === 'user' ? 'You' : 'Bot'}: ${message}`;
+            msgDiv.textContent = message;
             chatBox.appendChild(msgDiv);
             chatBox.scrollTop = chatBox.scrollHeight;
         }
 
         sendBtn.addEventListener('click', async () => {
-            const userMessage = chatInput.value;
+            const userMessage = chatInput.value.trim();
             if (!userMessage) return;
 
             appendMessage('user', userMessage);
@@ -118,15 +178,20 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: userMessage }),
                 });
+
                 const data = await response.json();
                 if (data.messages) {
                     data.messages.forEach(msg => appendMessage('bot', msg));
                 } else {
-                    appendMessage('bot', 'Error: No response from server');
+                    appendMessage('bot', 'No response from server.');
                 }
             } catch (error) {
-                appendMessage('bot', 'Error: Failed to connect to server');
+                appendMessage('bot', 'Error: Could not connect to server.');
             }
+        });
+
+        chatInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') sendBtn.click();
         });
     </script>
 </body>
