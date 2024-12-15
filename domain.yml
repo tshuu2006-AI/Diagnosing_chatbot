@@ -157,6 +157,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - nlu_fallback
+  - recommend_muscle_group_exercise
 
 responses:
   utter_ans_intensity_vs_recovery:
@@ -619,8 +620,20 @@ responses:
   utter_iamabot:
   - text: "I am a Hoang Sang, powered by Thang Huu."
 
+entities:
+  - muscle_group
+
+slots:
+  muscle_group:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: muscle_group
+
 actions:
   - action_low_confidence_fallback
+  - action_recommend_exercise
 
 session_config:
   session_expiration_time: 60

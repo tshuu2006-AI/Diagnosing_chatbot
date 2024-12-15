@@ -58,6 +58,7 @@ nlu:
 - intent: cycling_vs_running
   examples: |
     - Is cycling better than running for losing weight?
+    
 
 - intent: spin_classes_weight_loss
   examples: |
@@ -809,3 +810,31 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+
+- intent: recommend_muscle_group_exercise
+  examples: |
+    - I want to train my [chest](muscle_group)
+    - I want to train my [core](muscle_group)
+    - I want to train my [abs](muscle_group)
+    - I want to train my [leg](muscle_group)
+    - I want to train my [back](muscle_group)
+    - I want to train my [shoulder](muscle_group)
+    - Which exercise should I do to train my [chest](muscle_group)
+    - Which exercise should I do to train my [core](muscle_group)
+    - Which exercise should I do to train my [abs](muscle_group)
+    - Which exercise should I do to train my [leg](muscle_group)
+    - Which exercise should I do to train my [back](muscle_group)
+    - Which exercise should I do to train my [shoulder](muscle_group)
+    - What can I do to train my [chest](muscle_group)
+    - What can I do to train my [core](muscle_group)
+    - What can I do to train my [abs](muscle_group)
+    - What can I do to train my [leg](muscle_group)
+    - What can I do to train my [back](muscle_group)
+    - What can I do to train my [shoulder](muscle_group)
+    - What's a good exercise for my [chest](muscle_group)?
+    - What's a good exercise for my [core](muscle_group)?
+    - What's a good exercise for my [core](muscle_group)?
+    - What's a good exercise for my [abs](muscle_group)?
+    - What's a good exercise for my [leg](muscle_group)?
+    - What's a good exercise for my [back](muscle_group)?
+    - What's a good exercise for my [shoulder](muscle_group)?
